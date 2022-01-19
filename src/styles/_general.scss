@@ -1,0 +1,47 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  width:100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+}
+
+.App {
+  padding: $page-padding;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include below($desktop) {
+    background: red;
+  }
+}
+
+h1, 
+h2,
+h3,
+p,
+a {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    text-shadow: $textShadow;
+    &:hover {
+        color: $activeColor;
+    }
+}

@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './example.png';
+import './styles/App.scss';
+
+// import './styles/App.css'
 
 function App() {
   return (
@@ -7,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          I AM A WIZARD
         </p>
         <a
           className="App-link"
@@ -15,9 +17,17 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          HELLO
         </a>
       </header>
+      <div>
+        <form className="custom_form">
+          <input className="global_input"></input>
+          <input className="global_input"></input>
+          <input className="global_input"></input>
+          <input type="radio" className="global_input radio"></input>
+        </form>
+      </div>
     </div>
   );
 }
